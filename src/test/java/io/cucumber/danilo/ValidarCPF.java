@@ -16,7 +16,7 @@ public class ValidarCPF {
         System.setProperty("webdriver.chrome.driver", "/Users/thiago.de.o.galeno/Documents/devops/dbb-cumcuber/driver/chromedriver");
 
         browser = new ChromeDriver();
-        browser.get("http://localhost:8080/");
+        browser.get("http://localhost:8081/");
     }
 
     @Dado("digito o CPF válido {string}")
