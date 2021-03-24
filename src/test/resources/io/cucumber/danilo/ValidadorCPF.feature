@@ -1,14 +1,14 @@
 # language: pt
 
 Funcionalidade: Validar CPF
-    Cenario: CPF Valido
-        Dado que eu esteja na pagina de validação de CPF
-        E digito o CPF válido "093.160.114-26"
-        Quando eu clico no botão enviar
-        Entao devo ver uma mensagem de "CPF validado com sucesso"
+  Cenario: CPF Válido
+    Dado que eu esteja na pagina de validação de cpf
+    E digito um cpf válido "129.360.810-68"
+    Quando eu clico no botão enviar
+    Entao devo ver uma mensagem de "Foi validado com sucesso"
 
-    Cenario: CPF Invalido
-        Dado que eu esteja na pagina de validação de CPF
-        E digito o CPF válido "093.160.114-29"
-        Quando eu clico no botão enviar
-        Entao devo ver uma mensagem de "CPF Invalido"
+  Cenario: CPF Inválido
+    Dado que eu esteja na pagina de validação de cpf
+    E digito um cpf válido "129.360.810-69"
+    Quando eu clico no botão enviar
+    Entao devo ver uma mensagem de "Não é válido"
